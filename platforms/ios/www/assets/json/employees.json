@@ -1,0 +1,29 @@
+[
+	{
+		"userName":"admin",
+		"password":"admin",
+		"customerId":"MAL72380419"
+	},
+	{
+		"userName":"user1",
+		"password":"user1",
+		"customerId":"MAL61244920"
+	}
+	,
+	{
+		"userName":"user2",
+		"password":"user2",
+		"customerId":"MAL18113623"
+	},
+	{
+		"userName":"user3",
+		"password":"user3",
+		"customerId":"MAL12205759"
+	},
+	{
+		"userName":"user3",
+		"password":"user3",
+		"customerId":"MAL43699145"
+	}
+	
+]

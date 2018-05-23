@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="DGSApp">
+<head>
+    <meta charset="utf-8" />
+     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>DGS</title>
+    <!-- inject:css -->
+  <link rel="stylesheet" href="app/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/lib/css/font-awesome.min.css">
+  <!-- endinject -->
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <loader ng-if="loading"></loader>
+     <div ui-view></div>
+
+        <!-- scripts -->
+        <script src="app/lib/js/jquery.min.js"></script>
+        <script src="app/lib/js/angular.min.js"></script>
+        <script src="cordova.js"></script>
+	      <script src="app/highchartjs/highcharts.js"></script>
+        <script src="app/highchartjs/highcharts-more.js"></script>
+        <script src="app/highchartjs/solid-gauge.js"></script>
+        <!-- inject:js -->
+        <script src="app/app.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/router.js"></script>
+        <script src="app/controllers/dashboard.controller.js"></script>
+        <script src="app/controllers/login.controller.js"></script>
+        <script src="app/controllers/payment.controller.js"></script>
+        <script src="app/directives/app.directives.js"></script>
+        <script src="app/filters/app.filters.js"></script>
+        <script src="app/services/data.service.js"></script>
+        <script src="app/services/flash.service.js"></script>
+        <script src="app/lib/js/angular-cookies.min.js"></script>
+        <script src="app/lib/js/angular-ui-router.min.js"></script>
+        <script src="app/lib/js/bootstrap.min.js"></script>
+        <script src="app/lib/js/fastclick.js"></script>
+        <!-- endinject -->
+</body>
+</html>

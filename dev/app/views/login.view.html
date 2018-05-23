@@ -1,0 +1,52 @@
+
+
+<section class="login-section">
+      <div class="login-bg"></div>
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="login-header">
+{{appTitle}}
+    </div>
+    <div class="login-body">
+    <h3>Login</h3>
+     <flashmessage></flashmessage>
+    <form name="form" ng-submit="login()" role="form">
+      <!--   <div class="login-input-group">
+        <div ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+         <span class="fa fa-info-circle errspan"></span>
+            <input type="text" name="username" id="username" class="form-control" ng-model="username" placeholder="E-mail Address" required />
+            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+        </div>
+        <div  ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+           <span class="fa fa-info-circle errspan"></span>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password" ng-model="password" required />
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+        </div>
+        </div> -->
+
+<div class="login-input-group">
+  <div class="input-group margin-bottom-sm username-box">
+    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="form-control" name="username" id="username"  type="text" ng-model="username"  placeholder="Username" required>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+    <input class="form-control" name="password" id="password" type="password" placeholder="Password" ng-model="password" required>
+  </div>
+ </div>
+
+
+        <div class="form-actions btn-container">
+            <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary btn-block">Login</button>
+           
+            <a ui-sref="register" class="btn white-text btn-link">Forgot Password?</a>
+        </div>
+         <div class="logo-container">
+ <image src="assets/images/brand-logo.png" >
+</div>
+    </form>
+    </div>
+</div>
+
+</section>

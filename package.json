@@ -1,0 +1,21 @@
+{
+    "name": "com.eygsskpoc.dgsdemo",
+    "version": "0.0.1",
+    "displayName": "DGS",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-splashscreen": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-whitelist": "1",
+        "cordova-plugin-splashscreen": "~4.0.3",
+        "cordova-plugin-statusbar": "~2.2.2"
+    }
+}

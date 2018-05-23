@@ -1,0 +1,11 @@
+{
+	"AccountNumber":"A100235689",
+	"DeviceId":"A100235689",
+	"MaxConsumption":100,
+	"Consumption":100,
+	"Charge":90,
+	"PrePaymentBalance":-15.50,
+	"AccountBalance":12.70,
+	"CustomerId":"sampleudid"
+}
+

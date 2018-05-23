@@ -1,0 +1,38 @@
+<div class="header">
+	<span class="logo left-icon"></span>
+	<span back class="back left-icon" ng-show="brand"></span>
+	<span class="title header-content">{{appTitle}}</span>
+	<!--<a ng-click="openCollapseMenu()" class="toggle-bars"><i class="fa fa-bars" ng-class="collapsed == true ? 'fa-bars' : 'fa-times'" aria-hidden="true"></i></a>
+	<div class="collapse toggleMenuWrap" ng-class="{'in' : collapsed == false}">
+		<div class="user-details">
+			<i class="fa fa-user-circle-o" aria-hidden="true"></i> John Smith
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a ui-sref="login">Home</a></li>
+			<li><a ui-sref="dashboard">Account Management</a></li>
+			<li><a ui-sref="payment">Payment Portal</a></li>
+		</ul>
+		<div class="row info-section">
+			<div class="col-xs-6 info-button"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+			<div class="col-xs-6">English <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+		</div>
+	</div>-->
+	<a data-toggle="collapse" data-target="#toggleMenu" id="toggle"ng-click="openCollapseMenu()" class="toggle-bars"><i class="fa fa-bars" ng-class="collapsed == true ? 'fa-bars' : 'fa-times'" aria-hidden="true" ></i></a>
+	<div id="toggleMenu" class="collapse toggleMenuWrap">
+		<div class="user-details">
+			<i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi 
+			{{userName}}
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a ui-sref="dashboard" ui-sref-opts="{reload: true, notify: true}">Dashboard</a></li>
+			<li><a ui-sref="login">Logout</a></li>
+			
+		</ul>
+		<!-- <div class="row info-section">
+			<div class="col-xs-6 info-button"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+			<div class="col-xs-6">English <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+		</div> -->
+	</div>
+</div>

@@ -1,0 +1,83 @@
+<section class="dashboard-section">
+	<div class="top-pannel">
+		<header></header>
+	</div>
+	 <flashmessage></flashmessage>
+	<div class="top-bar">
+		<div class="row row-right-zero-margin">
+			<div class="col-xs-6 col-sm-6">
+				<div class="small-text">Account Number</div> 
+				<div class="big-text">{{datsboardObj.AccountNumber}}</div> 
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="small-text">Device ID</div> 
+				<div class="big-text">{{datsboardObj.DeviceId}}</div> 
+			</div>
+		</div>
+	</div>
+	<!-- <div class="tabs">
+		<div ng-click="refreshChart(30)" class="tab">Month-To-Date</div>
+		<div  ng-click="refreshChart(60)" class="tab tabopen">Week-To-Date</div>
+		<div  ng-click="refreshChart(100)" class="tab">Today</div>
+		<div  ng-click="refreshChart(70)" class="tab">Now</div>
+	</div> -->
+
+	<!-- <div class="checkbox-container">
+		<div class="row row-right-zero-margin">
+			<div class="col-xs-6 col-sm-6">
+				<div class="checkbox">
+					<label style="font-size: 1em">
+						<input type="checkbox" value="" checked>
+						<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+						Historic
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="checkbox">
+					<label style="font-size: 1em">
+						<input type="checkbox" value="" checked>
+						<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+						Peer
+					</label>
+				</div>
+			</div>
+		</div></div>
+ -->
+ 		
+		<div id="guage-container">
+			<div class="refresh-view" ng-if="!loading"><i ng-click="initController();"class="fa fa-refresh" aria-hidden="true"></i></div>
+		</div>
+		
+
+		<div class="balance-container">
+			<div class="chart-items">
+			<div class="row row-right-zero-margin">
+				<div class="col-xs-4 col-sm-4">
+					<span><i class="fa fa-circle low" aria-hidden="true"></i> Low</span>
+
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<span><i class="fa fa-circle medium" aria-hidden="true"></i> Medium</span>
+
+				</div>
+				<div class="col-xs-4 col-sm-4">
+					<span><i class="fa fa-circle high" aria-hidden="true"></i> High</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="balance-box">
+			<div> <span class="medium-text">Account Balance  </span> <span class="date-text" ng-if="!loading">till {{datsboardObj.currentDate | date_format}}</span></div>
+			<div class="balance-text" ng-class="{'red-text': datsboardObj.AccountBalance <= 0,'black-text':datsboardObj.AccountBalance > 0}">
+				$ {{datsboardObj.AccountBalance}}
+			</div>
+			<div class="btn-container">
+				<button type="submit" ui-sref="payment" class="btn btn-primary payment-btn">Make Payment</button>
+			</div>
+		</div>
+		</div>
+		<!--  <div class="guage-bg"></div> -->
+	</section>
+

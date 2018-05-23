@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="DGSApp">
+<head>
+    <meta charset="utf-8" />
+     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>DGS</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"/>
+   <link href="assets/css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <loader ng-if="loading"></loader>
+
+     <div ui-view></div>
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+     <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+     <script src="node_modules/angular-cookies/angular-cookies.js"></script>
+       <script src="node_modules/fastclick/lib/fastclick.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/router.js"></script>
+       <script src="app/config.js"></script>
+	
+	
+    <script src="app/highchartjs/highcharts.js"></script>
+	<script src="app/highchartjs/highcharts-more.js"></script>
+	<script src="app/highchartjs/solid-gauge.js"></script>
+
+    <script src="app/services/flash.service.js"></script>
+     <script src="app/services/data.service.js"></script>
+
+    <script src="app/directives/app.directives.js"></script>
+
+    <script src="app/filters/app.filters.js"></script>
+
+    <script src="app/controllers/login.controller.js"></script>
+    <script src="app/controllers/dashboard.controller.js"></script>
+     <script src="app/controllers/payment.controller.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<section class="dashboard-section">
+	<div class="top-pannel">
+		<header></header>
+	</div>
+	 <flashmessage></flashmessage>
+	<div class="payment-view-wrap">
+	
+		<div class="top-bar">
+		<div class="row row-right-zero-margin">
+			<div class="col-xs-6 col-sm-6">
+				<div class="small-text">Account Number</div> 
+				<div class="big-text">{{datsboardObj.AccountNumber}}</div> 
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="small-text">Device ID</div> 
+				<div class="big-text">{{datsboardObj.DeviceId}}</div> 
+			</div>
+		</div>
+	</div>
+		<div class="payment-head">My Payments</div>
+		<div class="payment-balance-container" ng-show="currentTab == 'prePayment'">
+			<h4>Your Current Balance</h4>
+		<div class="balance-text" ng-class="{'red-text': datsboardObj.AccountBalance <= 0,'black-text':datsboardObj.AccountBalance > 0}">
+				$ {{datsboardObj.IsPrePayment? datsboardObj.AccountBalance:0}}
+			</div>
+		</div>
+		<div class="payment-balance-container" ng-show="currentTab == 'creditView'">
+			<h4>Your Credit Balance</h4>
+			<div class="balance-text" ng-class="{'red-text': datsboardObj.AccountBalance <= 0,'black-text':datsboardObj.AccountBalance > 0}">
+					$ {{datsboardObj.IsPrePayment?0:datsboardObj.AccountBalance}}
+			</div>
+			
+		</div>
+		<div class="topUp-section">
+
+<div class="secure-text">Secure Payment by</div>
+		<div class="row row-right-zero-margin payment-icons">
+
+			<div class="col-xs-3"><image src="assets/images/visa.png"> </div>
+				<div class="col-xs-3"><image src="assets/images/mastercard.png" ></div>
+				<div class="col-xs-3"><image src="assets/images/paypal.png"> </div>
+				<div class="col-xs-3"><image src="assets/images/american-express.png"> </div>
+			
+		</div>
+		 <form name="form" ng-submit="makePayment()" role="form">
+			<div class="lable-text">Enter Top Up Amount</div>
+			<div><input numbers-only type="text" ng-model="topupAmount" required></div>
+			<div class="btn-container">
+				<button ng-disabled="form.$invalid" type="submit" class="btn btn-primary payment-btn">Make Payment</button>
+			</div>
+			    </form>
+		</div>
+	
+	</div>
+
+	<!--  <div class="guage-bg"></div> -->
+</section>
